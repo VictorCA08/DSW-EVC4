@@ -1,0 +1,16 @@
+@server = https://fictional-couscous-vgqvx74v6cv76-8080.app.github.dev
+###
+GET {{server}}/api/suplementos
+###
+POST {{server}}/api/suplementos
+Content-Type: application/json
+
+{"nombre": "Creatina"}
+###
+GET {{server}}/api/ventas
+###
+GET {{server}}/api/ventas/1
+###
+GET {{server}}/api/ventas/1/informacion
+###
+GET {{server}}/api/detalleventa
