@@ -14,7 +14,7 @@ class HomePage extends React.Component {
 			this.setState({ suplementos: response.entity._embedded.suplementos });
 		});
 
-		client({ method: 'GET', path: '/api/bandas' }).done(response => {
+		client({ method: 'GET', path: '/api/ventas' }).done(response => {
 			this.setState({ ventas: response.entity._embedded.ventas });
 		});
 

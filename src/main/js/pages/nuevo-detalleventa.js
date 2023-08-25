@@ -18,7 +18,7 @@ const NuevoDetalleventaPage = () => {
             path: '/api/detalleventa',
             entity: {
                 venta: 'http://localhost:8080/api/ventas/'+id,
-                suplemento: 'http://localhost:8080/api/suplementos/'+idMusico,
+                suplemento: 'http://localhost:8080/api/suplementos/'+idSuplemento,
             headers: {'Content-Type': 'application/json'}
         }).done(()=>{
            window.location = '/';
@@ -30,7 +30,7 @@ const NuevoDetalleventaPage = () => {
             method: 'GET',
             path: '/api/suplementos'
         }).done(response=>{
-            setMusicos(response.entity._embedded.suplementos)
+            setSuplementos(response.entity._embedded.suplementos)
         })
     
 
