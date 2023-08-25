@@ -20,7 +20,7 @@ public class Detalleventa {
     private Suplemento suplemento;
 
     private int cantidad;
-	public Detalleventa(Integer cantidad) {
+	public Detalleventa(int cantidad) {
 		this.cantidad = cantidad;
 	}
 
