@@ -20,7 +20,7 @@ const NuevoDetalleventaPage = () => {
                 venta: 'http://localhost:8080/api/ventas/'+id,
                 suplemento: 'http://localhost:8080/api/suplementos/'+idSuplemento,
             headers: {'Content-Type': 'application/json'}
-        }).done(()=>{
+            }}).done(()=>{
            window.location = '/';
         })
     }
