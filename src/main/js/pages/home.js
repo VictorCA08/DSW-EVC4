@@ -25,12 +25,12 @@ class HomePage extends React.Component {
 				<h1>Suplemetos Deportivos</h1>
 				<div>
 					<div style={{"width": "calc(100% / 3)"}}>
-						<Titulo entidad="Suplementos" emoji="🎶" />
+						<Titulo entidad="Suplementos" emoji="💪" />
 						<SuplementoList suplementos={this.state.suplementos} />
 						<Link to="/nuevo-suplemento">Nuevo Suplemento</Link>
 					</div>
 					<div style={{"width": "calc(100% / 3)"}}>
-						<Titulo entidad="Ventas" emoji="👩🏼‍🎤" />
+						<Titulo entidad="Ventas" emoji="💰" />
 						<VentaList ventas={this.state.ventas} />
 						<Link to="/nueva-venta">Nueva Venta</Link>
 					</div>
